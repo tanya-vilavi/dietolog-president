@@ -1,2 +1,5 @@
-worker: python bot.py
+pip install -r must.txt
+python bot_dietolog_president.py
+
+
 
