@@ -3,7 +3,7 @@ import os
 from datetime import datetime
 import openai  # версия 0.28.*
 from aiogram import Bot, Dispatcher, types
-from aiogram.utils import executor
+from aiogram import executor
 # === CONFIG ===
 import os
 openai.api_key = os.getenv("OPENAI_API_KEY")
