@@ -12,7 +12,6 @@ TG_BOT_TOKEN = os.getenv("BOT_TOKEN")
 # Белый список (по умолчанию пусто => пускать всех).
 # Получи свой id командой /id и впиши сюда, например: {123456789}
 ALLOWED_USER_IDS = set(int(x) for x in os.getenv("ALLOWED_USER_IDS", "").split(",") if x.strip().isdigit())
-openai.api_key = OPENAI_API_KEY
 bot = Bot(token=TG_BOT_TOKEN, parse_mode="HTML")
 dp = Dispatcher(bot)
 # =================== User profile storage ===================
